@@ -4,7 +4,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL_PRODUCTION")
 }
+//database url production
+//prisma://aws-us-east-1.prisma-data.com/?api_key=ATtNfzedthDQdKwnVccQ9-wsn7zwaZaKhE6zZxYl4IJY3_PS54OAgXipI63adcT1
 
+
+//real connection string for migrations
+//postgres://drzdyacksdttrr:a2cfe1acbc23da912dfeaefe3da2e1056f0b6a4bcadba8ebee50dde7784d6c97@ec2-35-174-52-65.compute-1.amazonaws.com:5432/df7ra0u4eirfpq
 generator client {
   provider        = "prisma-client-js"
 }
