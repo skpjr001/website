@@ -20,7 +20,7 @@ export const Navigation = () => {
         </Link>
 
         <div className="flex space-x-4 font-medium text-gray-800">
-          <Link href="/#about">
+          <Link href="/about">
             <a
               className={clsx(
                 "transition-colors hover:text-sky-500",
@@ -40,13 +40,23 @@ export const Navigation = () => {
               Blog
             </a>
           </Link>
+          <Link href="/projects">
+            <a
+              className={clsx(
+                "transition-colors hover:text-sky-500",
+                FOCUS_VISIBLE_OUTLINE,
+              )}
+            >
+              Projects
+            </a>
+          </Link>
 
           <div className="text-gray-300">&bull;</div>
 
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://twitter.com/delba_oliveira"
+            href="https://twitter.com/skpjr001"
             className={clsx(
               "transition-colors hover:text-sky-500",
               FOCUS_VISIBLE_OUTLINE,
@@ -57,7 +67,7 @@ export const Navigation = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.youtube.com/c/delba"
+            href="https://www.youtube.com/"
             className={clsx(
               "transition-colors hover:text-sky-500",
               FOCUS_VISIBLE_OUTLINE,
@@ -68,7 +78,7 @@ export const Navigation = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/delbaoliveira"
+            href="https://github.com/skpjr001"
             className={clsx(
               "transition-colors hover:text-sky-500",
               FOCUS_VISIBLE_OUTLINE,

@@ -8,7 +8,7 @@ import { FOCUS_VISIBLE_OUTLINE } from "../lib/constants"
 
 export const MediaPreview = ({
   title,
-  text,
+  description,
   url,
   image,
   type = "post"
@@ -28,13 +28,17 @@ export const MediaPreview = ({
                 </div>
               ) : null}
 
-              <Image src={image} alt={title} width={width} height={height} />
+              <img src={image} alt={title} width={width} height={height} />
             </div>
-          ) : null}
+            ) 
+            : <div className="relative mb-4 overflow-hidden rounded-lg text-[0px]">
+                <Image src="/blog/default.png" alt={title} width={width} height={height} />
+              </div>
+          }
           <h2 className="text-lg font-bold group-hover:text-sky-500">
             {title}
           </h2>
-          <p className="text-gray-800 line-clamp-2">{text}</p>
+          <p className="text-gray-800 line-clamp-2">{description}</p>
         </a>
       </Link>
     </div>

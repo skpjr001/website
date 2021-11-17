@@ -5,7 +5,7 @@ import { RoughNotationGroup } from "react-rough-notation"
 
 import { shuffleArray } from '../lib/shuffleArray'
 import { RainbowHighlight } from "../components/RainbowHighlight"
-import profileImg from "../public/profile.png"
+import profileImg from "../public/profile.jpg"
 import {LIGHT_COLORS, FOCUS_VISIBLE_OUTLINE} from "../lib/constants"
 
 
@@ -25,11 +25,11 @@ export const About = () => {
       <div className="space-x-5 lg:flex item-center lg:-mx-4">
         <div className="lg:px-4 ">
           <RoughNotationGroup show={true}>
-            <h1 className="text-2xl font-bold text-gray-900 lg:text-4xl">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 lg:text-4xl">
               {"Hi there, I'm Sachin."}
             </h1>
 
-            <div className="mt-4 text-gray-800">
+            <div className="mt-4 text-gray-800 dark:text-gray-100">
               <p>
                 I love making tools that are user-friendly, simple and
                 delightful. I work as a{" "}

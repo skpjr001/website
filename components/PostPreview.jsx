@@ -5,7 +5,7 @@ export const PostPreview = ({post}) => {
   return (
     <MediaPreview
       title={post.title}
-      text={post.text}
+      description={post.description}
       url={`/blog/${post.slug}`}
       image={post.image}
     />
