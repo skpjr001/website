@@ -34,7 +34,7 @@ export default function Home({response}) {
             setTheme(theme === 'light' ? 'dark' : 'light')
           }}
         >
-          Change Theme
+          Change Theme Now
         </button> */}
 
         <div id="reel">
