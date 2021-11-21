@@ -119,5 +119,6 @@ export async function getStaticProps(context) {
         projects:notionProjects.results
       }
     }, // will be passed to the page component as props
+    revalidate: 1000, // In seconds
   }
 }
