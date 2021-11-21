@@ -43,5 +43,6 @@ export async function getStaticProps(context) {
   const response = await notion.databases.query({ database_id: process.env.NotionProjectsDatabaseId, sorts:[{timestamp: "last_edited_time", direction: "descending"}] });
   return {
     props: {response}, // will be passed to the page component as props
+    revalidate:3500,
   }
 }
